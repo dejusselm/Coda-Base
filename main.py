@@ -206,6 +206,20 @@ def exercice37():
         for j in range(i+1):
             print("*",end="")
 
+def exercice38():
+    action = input("Indiquer l'opération à effectuer (addition, soustraction, division, multiplication) : ")
+    if action in ["addition", "soustraction", "division", "multiplication"]:
+        nb1 = int(input("Donner un premier nombre : "))
+        nb2 = int(input("Donner un deuxième nombre : "))
+        if action == "addition":
+            print(nb1," + ",nb2," = ", nb1+nb2)
+        elif action == "soustraction":
+            print(nb1," - ",nb2," = ", nb1-nb2)
+        elif action == "division":
+            print(nb1," ÷ ",nb2," = ", nb1//nb2)
+        elif action == "multiplication":
+            print(nb1," × ",nb2," = ", nb1*nb2)
+    
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -283,6 +297,8 @@ def main():
         exercice36()
     elif choix == "37":
         exercice37()
+    elif choix == "38":
+        exercice38()
     else:
         print("Exercice non reconnu.")
 
