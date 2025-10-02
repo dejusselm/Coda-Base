@@ -243,6 +243,28 @@ def exercice41():
     nb1,nb2,nb3,nb4,nb5 = int(input("Entrer la 1ere note : ")),int(input("Entrer la 2eme note : ")),int(input("Entrer la 3eme note : ")),int(input("Entrer la 4eme note : ")),int(input("Entrer la 5eme note : "))
     print("Moyenne = ",(nb1+nb2+nb3+nb4+nb5)//5)
 
+def exercice42():
+    nb1,nb2,nb3,nb4,nb5 = int(input("Entrer le 1er nombre : ")),int(input("Entrer le 2eme : ")),int(input("Entrer le 3eme : ")),int(input("Entrer le 4eme ")),int(input("Entrer le 5eme : "))
+    tab_nb = []
+    tab_nb = tab_nb + [nb1,nb2,nb3,nb4,nb5]
+    mini = tab_nb[0]
+    maxi = tab_nb[0]
+    for i in range(1,len(tab_nb)):
+        if mini>tab_nb[i]:
+            mini = tab_nb[i]
+        elif maxi<tab_nb[i]:
+            maxi = tab_nb[i]
+    print("Le minimum est ",mini," et le maximum est ",maxi)
+
+def exercice43():
+    mot = input("Donner un mot ou une phrase : ")
+    compteur = 0
+    voyelles = ["a","e","i","o","u","y"]
+    for lettre in mot:
+        if lettre in voyelles:
+            compteur +=1
+    print(compteur, " voyelle(s)")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -328,6 +350,10 @@ def main():
         exercice40()
     elif choix == "41":
         exercice41()
+    elif choix == "42":
+        exercice42()
+    elif choix == "43":
+        exercice43()
     else:
         print("Exercice non reconnu.")
 
