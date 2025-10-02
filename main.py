@@ -219,7 +219,19 @@ def exercice38():
             print(nb1," ÷ ",nb2," = ", nb1//nb2)
         elif action == "multiplication":
             print(nb1," × ",nb2," = ", nb1*nb2)
-    
+import random
+def exercice39():
+    pair = False
+    nb = random.randint(1,30)
+    if nb//2 : 
+        pair = True
+    rep= input("Le nombre est-il pair ou impair ? pair/impair ")
+    if (rep == "pair" and pair==True) or (rep == "impair" and pair==False) :
+        print("Gagné !" )
+    else:
+        print("Perdu ! ")
+    print("Le nombre était : ",nb)
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -299,6 +311,8 @@ def main():
         exercice37()
     elif choix == "38":
         exercice38()
+    elif choix == "39":
+        exercice39()
     else:
         print("Exercice non reconnu.")
 
