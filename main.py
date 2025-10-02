@@ -62,12 +62,20 @@ def exercice15():
     print("Périmètre = ",4*long)
 
 def exercice16():
+    long= int(input("Donnez la longueur du côté du carré : "))
+    print("Aire = ",long*long)
+
+def exercice17():
     quant=int(input("Indiquer la somme à convertir : "))
     print(quant,"€ = ", quant*1.1, "$")
 
-def exercice17():
+def exercice18():
     temps=int(input("Indiquer une durée (en min) : "))
     print(temps," minutes = ",temps*60," secondes")
+
+def exercice19():
+    prix=int(input("Indiquer un prix HT : "))
+    print("Prix TTC = ",prix+prix*(20/100))
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -106,6 +114,10 @@ def main():
         exercice16()
     elif choix == "17":
         exercice17()
+    elif choix == "18":
+        exercice18()
+    elif choix == "19":
+        exercice19()
     else:
         print("Exercice non reconnu.")
 
