@@ -65,6 +65,10 @@ def exercice16():
     quant=int(input("Indiquer la somme à convertir : "))
     print(quant,"€ = ", quant*1.1, "$")
 
+def exercice17():
+    temps=int(input("Indiquer une durée (en min) : "))
+    print(temps," minutes = ",temps*60," secondes")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -100,6 +104,8 @@ def main():
         exercice15()
     elif choix == "16":
         exercice16()
+    elif choix == "17":
+        exercice17()
     else:
         print("Exercice non reconnu.")
 
