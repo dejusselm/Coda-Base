@@ -279,6 +279,27 @@ def exercice45():
         somme += el
     print("Somme = ",somme)
 
+def exercice46():
+    nb1,nb2,nb3,nb4,nb5 = int(input("Entrer le 1er nombre : ")),int(input("Entrer le 2eme : ")),int(input("Entrer le 3eme : ")),int(input("Entrer le 4eme ")),int(input("Entrer le 5eme : "))
+    tab = []
+    tab = tab + [nb1,nb2,nb3,nb4,nb5]
+    nb_trouv = int(input("Donner un nombre à chercher dans le tableau : "))
+    if nb_trouv in tab:
+        print("Trouvé")
+    else :
+        print('Pas trouvé')
+
+def exercice47():
+    nb1,nb2,nb3,nb4,nb5 = int(input("Entrer le 1er nombre : ")),int(input("Entrer le 2eme : ")),int(input("Entrer le 3eme : ")),int(input("Entrer le 4eme ")),int(input("Entrer le 5eme : "))
+    tab = []
+    tab = tab + [nb1,nb2,nb3,nb4,nb5]
+    nb = int(input("Nombre à trouver"))
+    compteur = 0
+    for el in tab:
+        if el == nb:
+            compteur+=1
+    print(compteur," fois")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -372,6 +393,10 @@ def main():
         exercice44()
     elif choix == "45":
         exercice45()
+    elif choix == "46":
+        exercice46()
+    elif choix == "47":
+        exercice47()
     else:
         print("Exercice non reconnu.")
 
