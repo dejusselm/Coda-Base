@@ -150,6 +150,17 @@ def exercice28():
     else:
         print("Vapeur")
 
+def exercice29():
+    note= int(input("Donner une note : "))
+    if note<8:
+        print("Recalé")
+    elif note<11:
+        print("Passable")
+    elif note<14:
+        print("Bien")
+    else:
+        print("Très bien")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -209,6 +220,9 @@ def main():
         exercice27()
     elif choix == "28":
         exercice28()
+    elif choix == "29":
+        exercice29()
+
     else:
         print("Exercice non reconnu.")
 
