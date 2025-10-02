@@ -141,6 +141,15 @@ def exercice27():
     else:
         print("Adulte")
 
+def exercice28():
+    temp= int(input("Donner une température : "))
+    if temp<=0:
+        print("Solide")
+    elif temp>0 and temp<100:
+        print("Liquide")
+    else:
+        print("Vapeur")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -198,6 +207,8 @@ def main():
         exercice26()
     elif choix == "27":
         exercice27()
+    elif choix == "28":
+        exercice28()
     else:
         print("Exercice non reconnu.")
 
