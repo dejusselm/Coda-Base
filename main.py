@@ -98,6 +98,13 @@ def exercice22():
     else :
         print("La personne est mineure.")
 
+def exercice23():
+    note = int(input("Donner une note : "))
+    if note >=12:
+        print("Validé")
+    else :
+        print("Non validé")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -145,6 +152,8 @@ def main():
         exercice21()
     elif choix == "22":
         exercice22()
+    elif choix == "23":
+        exercice23()
     else:
         print("Exercice non reconnu.")
 
