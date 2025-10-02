@@ -77,6 +77,11 @@ def exercice19():
     prix=int(input("Indiquer un prix HT : "))
     print("Prix TTC = ",prix+prix*(20/100))
 
+def exercice20():
+    nom = input("Donner un nom : ")
+    age = input("Donner un âge : ")
+    print(nom, "a ",age," ans.")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -118,6 +123,8 @@ def main():
         exercice18()
     elif choix == "19":
         exercice19()
+    elif choix == "20":
+        exercice20()
     else:
         print("Exercice non reconnu.")
 
