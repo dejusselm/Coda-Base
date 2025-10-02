@@ -57,6 +57,10 @@ def exercice14():
     for i in range(1,6):
         print("2 x ",i," = ", 2*i)
 
+def exercice15():
+    long= int(input("Donnez la longueur du côté du carré : "))
+    print("Périmètre = ",4*long)
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -88,6 +92,8 @@ def main():
         exercice13()
     elif choix == "14":
         exercice14()
+    elif choix == "15":
+        exercice15()
     else:
         print("Exercice non reconnu.")
 
