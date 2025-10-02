@@ -91,6 +91,12 @@ def exercice21():
     else:
         print("Le nombre est nul.")
 
+def exercice22():
+    age = int(input("Donner un âge : "))
+    if age>=18:
+        print("La personne est majeure.")
+    else :
+        print("La personne est mineure.")
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -137,6 +143,8 @@ def main():
         exercice20()
     elif choix == "21":
         exercice21()
+    elif choix == "22":
+        exercice22()
     else:
         print("Exercice non reconnu.")
 
