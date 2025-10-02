@@ -41,6 +41,12 @@ def exercice10():
     nb = int(input("Donnez un nombre : "))
     print(nb*2)
 
+def exercice11():
+    nb = int(input("Donnez un nombre : "))
+    print("La moitié de ",nb," est : ",nb/2)
+
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -64,6 +70,9 @@ def main():
         exercice9()
     elif choix == "10":
         exercice10()
+    elif choix == "11":
+        exercice11()
+
     else:
         print("Exercice non reconnu.")
 
