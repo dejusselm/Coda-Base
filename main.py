@@ -105,6 +105,16 @@ def exercice23():
     else :
         print("Non validé")
 
+def exercice24():
+    nb1 = int(input("Donner un premier nombre : "))
+    nb2 = int(input("Donner un deuxième nombre : "))
+    if nb1 >nb2:
+        print(nb1, " est plus grand.")
+    elif nb2 >nb1:
+        print(nb2, " est plus grand.")
+    else :
+        print("Les deux nombres sont égaux.")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -154,6 +164,8 @@ def main():
         exercice22()
     elif choix == "23":
         exercice23()
+    elif choix == "24":
+        exercice24()
     else:
         print("Exercice non reconnu.")
 
