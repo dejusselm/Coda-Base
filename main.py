@@ -18,6 +18,17 @@ def exercice5():
     nb2 = int(input("Donnez un deuxième nombre : "))
     print(nb1+nb2)
 
+def exercice6():
+    nb1 = int(input("Donnez un premier nombre : "))
+    nb2 = int(input("Donnez un deuxième nombre : "))
+    print(nb1-nb2)
+
+def exercice7():
+    nb1 = int(input("Donnez un premier nombre : "))
+    nb2 = int(input("Donnez un deuxième nombre : "))
+    print(nb1*nb2)
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -31,6 +42,10 @@ def main():
         exercice4()
     elif choix == "5":
         exercice5()   
+    elif choix == "6":
+        exercice6()
+    elif choix == "7":
+        exercice7() 
     else:
         print("Exercice non reconnu.")
 
