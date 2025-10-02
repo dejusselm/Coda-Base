@@ -232,6 +232,17 @@ def exercice39():
         print("Perdu ! ")
     print("Le nombre était : ",nb)
 
+def exercice40():
+    mdp = input("Veuillez entrer un mot de passe : ")
+    if len(mdp)<6:
+        print("Trop court")
+    else : 
+        print("Valide")
+
+def exercice41():
+    nb1,nb2,nb3,nb4,nb5 = int(input("Entrer la 1ere note : ")),int(input("Entrer la 2eme note : ")),int(input("Entrer la 3eme note : ")),int(input("Entrer la 4eme note : ")),int(input("Entrer la 5eme note : "))
+    print("Moyenne = ",(nb1+nb2+nb3+nb4+nb5)//5)
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -313,6 +324,10 @@ def main():
         exercice38()
     elif choix == "39":
         exercice39()
+    elif choix == "40":
+        exercice40()
+    elif choix == "41":
+        exercice41()
     else:
         print("Exercice non reconnu.")
 
