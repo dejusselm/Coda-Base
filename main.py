@@ -13,7 +13,10 @@ def exercice4():
     annee = int(input('Quelle est votre année de naissance ? '))
     print("Vous avez environ ",2025-annee," ans")
 
-
+def exercice5():
+    nb1 = int(input("Donnez un premier nombre : "))
+    nb2 = int(input("Donnez un deuxième nombre : "))
+    print(nb1+nb2)
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -26,7 +29,8 @@ def main():
         exercice3()
     elif choix == "4":
         exercice4()
-        
+    elif choix == "5":
+        exercice5()   
     else:
         print("Exercice non reconnu.")
 
