@@ -45,6 +45,9 @@ def exercice11():
     nb = int(input("Donnez un nombre : "))
     print("La moitié de ",nb," est : ",nb/2)
 
+def exercice12():
+    for i in range(5):
+        print("Yo")
 
 
 def main():
@@ -72,6 +75,8 @@ def main():
         exercice10()
     elif choix == "11":
         exercice11()
+    elif choix == "12":
+        exercice12()
 
     else:
         print("Exercice non reconnu.")
