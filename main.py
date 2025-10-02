@@ -265,6 +265,20 @@ def exercice43():
             compteur +=1
     print(compteur, " voyelle(s)")
 
+def exercice44():
+    mot = input("Donner un mot : ")
+    for i in range(len(mot)-1,-1,-1):
+        print(mot[i],end="")
+
+def exercice45():
+    nb1,nb2,nb3,nb4,nb5 = int(input("Entrer le 1er nombre : ")),int(input("Entrer le 2eme : ")),int(input("Entrer le 3eme : ")),int(input("Entrer le 4eme ")),int(input("Entrer le 5eme : "))
+    tab = []
+    tab = tab + [nb1,nb2,nb3,nb4,nb5]
+    somme = 0
+    for el in tab:
+        somme += el
+    print("Somme = ",somme)
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -354,6 +368,10 @@ def main():
         exercice42()
     elif choix == "43":
         exercice43()
+    elif choix == "44":
+        exercice44()
+    elif choix == "45":
+        exercice45()
     else:
         print("Exercice non reconnu.")
 
