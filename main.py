@@ -124,6 +124,13 @@ def exercice25():
         print("Ordre croissant : NON")
     else:
         print("Tous les nombres sont égaux.")
+
+def exercice26():
+    nb = int(input("Donner un nombre : "))
+    if nb%5==0:
+        print('Divisible par 5')
+    else:
+        print("Non divisible par 5")
     
 
 def main():
@@ -179,6 +186,8 @@ def main():
         exercice24()
     elif choix == "25":
         exercice25()
+    elif choix == "26":
+        exercice26()
     else:
         print("Exercice non reconnu.")
 
