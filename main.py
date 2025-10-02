@@ -61,6 +61,10 @@ def exercice15():
     long= int(input("Donnez la longueur du côté du carré : "))
     print("Périmètre = ",4*long)
 
+def exercice16():
+    quant=int(input("Indiquer la somme à convertir : "))
+    print(quant,"€ = ", quant*1.1, "$")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -94,6 +98,8 @@ def main():
         exercice14()
     elif choix == "15":
         exercice15()
+    elif choix == "16":
+        exercice16()
     else:
         print("Exercice non reconnu.")
 
