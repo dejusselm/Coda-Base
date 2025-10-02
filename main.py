@@ -82,6 +82,16 @@ def exercice20():
     age = input("Donner un âge : ")
     print(nom, "a ",age," ans.")
 
+def exercice21():
+    nb = int(input("Donner un nombre : "))
+    if nb>0:
+        print("Le nombre est positif.")
+    elif nb<0:
+        print("Le nombre est négatif.")
+    else:
+        print("Le nombre est nul.")
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -125,6 +135,8 @@ def main():
         exercice19()
     elif choix == "20":
         exercice20()
+    elif choix == "21":
+        exercice21()
     else:
         print("Exercice non reconnu.")
 
