@@ -28,6 +28,11 @@ def exercice7():
     nb2 = int(input("Donnez un deuxième nombre : "))
     print(nb1*nb2)
 
+def exercice8():
+    nb1 = int(input("Donnez un premier nombre : "))
+    nb2 = int(input("Donnez un deuxième nombre : "))
+    print(nb1//nb2)
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -46,6 +51,8 @@ def main():
         exercice6()
     elif choix == "7":
         exercice7() 
+    elif choix == "8":
+        exercice8()
     else:
         print("Exercice non reconnu.")
 
