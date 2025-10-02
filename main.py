@@ -39,7 +39,7 @@ def exercice9():
 
 def exercice10():
     nb = int(input("Donnez un nombre : "))
-    print(nb*2)
+    print("Le double de ",nb, "est ",nb*2)
 
 def exercice11():
     nb = int(input("Donnez un nombre : "))
@@ -52,6 +52,10 @@ def exercice12():
 def exercice13():
     for i in range(1,6):
         print(i)
+
+def exercice14():
+    for i in range(1,6):
+        print("2 x ",i," = ", 2*i)
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -82,6 +86,8 @@ def main():
         exercice12()
     elif choix == "13":
         exercice13()
+    elif choix == "14":
+        exercice14()
     else:
         print("Exercice non reconnu.")
 
