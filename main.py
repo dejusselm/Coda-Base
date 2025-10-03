@@ -327,10 +327,6 @@ def exercice50():
     for el in suite:
         print(" ",el, end="")
 
-
-def exercice51():
-    pass
-
 def exercice54():
     lancer1= random.randint(1,6)
     lancer2= random.randint(1,6)
@@ -344,9 +340,41 @@ def exercice55():
         total = total*i
     print("Résultat : ",total)
 
-def exercice57():
-    pass
+def exercice58():
+    nb = input("Donner un nombre : ")
+    if (int(nb[0])**3)+(int(nb[1])**3)+(int(nb[2])**3)== int(nb):
+        print("Il s'agit d'un nombre d'Armstrong.")
+    else:
+        print("Il ne s'agit pas d'un nombre d'Armstrong.")
 
+def exercice63():
+    word1 = input("Donner un premier mot : ")
+    word2 = input("Donner un deuxième mot : ")
+    letters = []
+    if len(word1)== len(word2):
+        for letter in word1:
+            letters.append(letter)
+        for letter in letters:
+            if letter not in word2:
+                print("Les mots ne sont pas anagrammes")
+        print("Les mots sont anagrammes")
+    else:
+        print("Les mots ne sont pas anagrammes")
+
+def exercice64():
+    ch = input("Donner une suite de lettres : ")
+    l = ch[0]
+    compteur = 1
+    new_ch = ""
+    for l_ind in range(1,len(ch)):
+        if l == ch[l_ind]:
+            compteur +=1
+        else:
+            new_ch = new_ch + l + str(compteur)
+            compteur = 1
+            l = ch[l_ind]
+    new_ch = new_ch + l + str(compteur)
+    print(new_ch)
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -451,13 +479,16 @@ def main():
         exercice49()
     elif choix == "50":
         exercice50()
-    elif choix == "51":
-        exercice51()
     elif choix == "54":
         exercice54()
     elif choix == "55":
         exercice55()
-
+    elif choix == "58":
+        exercice58()
+    elif choix == "63":
+        exercice63()
+    elif choix == "64":
+        exercice64()
     else:
         print("Exercice non reconnu.")
 
