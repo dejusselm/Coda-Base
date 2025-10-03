@@ -328,6 +328,26 @@ def exercice50():
         print(" ",el, end="")
 
 
+def exercice51():
+    pass
+
+def exercice54():
+    lancer1= random.randint(1,6)
+    lancer2= random.randint(1,6)
+    print("Résultat du premier lancer : ",lancer1)
+    print("Résultat du deuxième lancer : ", lancer2)
+
+def exercice55():
+    nb = int(input("Donner un nombre : "))
+    total = 1
+    for i in range(2,nb+1):
+        total = total*i
+    print("Résultat : ",total)
+
+def exercice57():
+    pass
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -431,6 +451,12 @@ def main():
         exercice49()
     elif choix == "50":
         exercice50()
+    elif choix == "51":
+        exercice51()
+    elif choix == "54":
+        exercice54()
+    elif choix == "55":
+        exercice55()
 
     else:
         print("Exercice non reconnu.")
