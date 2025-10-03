@@ -300,6 +300,34 @@ def exercice47():
             compteur+=1
     print(compteur," fois")
 
+def exercice48():
+    nb = int(input("Donner un nombre : "))
+    diviseur = []
+    for i in range(1,nb+1):
+        if nb%i == 0:
+            diviseur.append(i)
+    print("Diviseurs : ", diviseur)
+
+def exercice49():
+    nb = int(input("Donner un nombre : "))
+    diviseur = []
+    for i in range(1,nb+1):
+        if nb%i == 0:
+            diviseur.append(i)
+    if len(diviseur)==2:
+        print("Le nombre est premier.")
+    else:
+        print("Le nombre n'est pas premier.")
+
+def exercice50():
+    nb = int(input("Donner un nombre : "))
+    suite = [0,1]
+    for i in range(2,nb):
+        suite.append((suite[i-2]+suite[i-1]))
+    for el in suite:
+        print(" ",el, end="")
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -397,6 +425,13 @@ def main():
         exercice46()
     elif choix == "47":
         exercice47()
+    elif choix == "48":
+        exercice48()
+    elif choix == "49":
+        exercice49()
+    elif choix == "50":
+        exercice50()
+
     else:
         print("Exercice non reconnu.")
 
